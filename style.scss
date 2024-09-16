@@ -1,0 +1,553 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: darkblue;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    #article-block
+    {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position:fixed;
+            width: 50vw;
+            height: 68vh;
+            margin: 8vh 0;
+
+            p
+            {
+                opacity: 0.8;
+                width: 21vw;
+                margin-bottom: 4vh;
+            }
+
+            h1
+            {
+                width: 21vw;
+                font-size: 50px;
+                margin-bottom: 4vh; 
+                opacity: 1;
+            }
+
+            h2
+            {
+                width: 21vw;
+                font-size: 30px;
+                margin-bottom: 2vh;
+                opacity: 0.9;
+            }
+
+            #links
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                a
+                {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: white;
+                    padding: 0.6vh 0;
+                    opacity: 0.6;
+                    width: 20vw;
+                    transition: 0.6s;
+                    transition: filter 1s;
+
+                    p
+                    {
+                        margin: 0px 10px 0px 0px;
+                        width: 3vw;
+                        height: 0.4vh;
+                        background-color: white;
+                        transition: 1s;
+                    }
+                }
+
+                // a:hover
+                // {
+                //     opacity: 1;
+                //     filter: drop-shadow(0px 0px 1px white);
+
+                //     p
+                //     {
+                //         width: 6vw;
+                //     }
+
+                //     #menu-p
+                //     {
+                //         width: 6vw;
+                //     }
+                // }
+            }
+
+            #imagens
+            {
+                display: flex;
+                align-items: center;
+                margin-top: 4vh;
+
+                a
+                {
+                    img
+                    {
+                        width: 45px;
+                        border-radius: 10px;
+                        height: 40px;
+                        margin: 10px;
+                        opacity: 0.6;
+                        transition: opacity 1s;
+                        transition: filter 1s;
+                    }
+
+                    img:hover
+                    {
+                        opacity: 1;
+                        filter: drop-shadow(0px 0px 2px white);
+                        transition: filter 1s;
+                    }
+                }
+            }
+
+    }
+
+    @media screen and (max-width: 1000px) {
+        #article-block
+        {
+            display: none;
+        }
+    }
+
+    main
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(18, 28, 56)  ;
+
+        
+
+        @media screen and (max-width: 1000px) {
+            #celular-respons2
+            {
+                display: none;
+            }
+        }
+
+        #dados
+        {
+            width: 40vw;
+
+            @media screen and (min-width: 1000px) {
+                #celular-respons
+                {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 1000px){
+                #celular-respons
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                p
+                {
+                    opacity: 0.6;
+                    width: 21vw;
+                    margin-bottom: 4vh;
+                }
+
+                h1
+                {
+                    width: 21vw;
+                    font-size: 50px;
+                    margin-bottom: 4vh; 
+                    opacity: 0.8;
+                }
+
+                h2
+                {
+                    width: 21vw;
+                    font-size: 30px;
+                    margin-bottom: 2vh;
+                    opacity: 0.7;
+                }
+
+                div
+                {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1vh;
+    
+                    a
+                    {
+                        img
+                        {
+                            width: 45px;
+                            border-radius: 10px;
+                            height: 40px;
+                            margin: 0px 10px;
+                            opacity: 0.4;
+                            transition: 1s;
+                        }
+    
+                        img:hover
+                        {
+                            opacity: 1;
+                        }
+                        
+                    }    
+                    
+                }
+            }   
+            }
+
+            #sobre
+            {
+                display: flex;
+                align-items: center;
+                text-align: justify;
+                justify-content: center;
+                opacity: 0.9;
+                padding: 8vh 0 0;
+
+                p
+                {
+                    margin-bottom: 3vh;
+                    line-height: 4vh;
+                }
+            }
+
+            #experiencias
+            {
+                padding: 10vh 0;
+                .principal-experiencias
+                {
+                    display: flex;
+                    justify-content: left;
+                    border-radius: 10px;
+                    text-align: justify;
+                    opacity: 0.9;
+                    transition: background-color 0.3s;
+                    padding: 20px;
+
+                    div
+                    {
+                        display: flex;
+                        flex-direction: column;
+
+                        
+                        h1
+                        {
+                            font-size: 14px;
+                            margin-bottom: 2vh;
+                        }
+
+                        h2
+                        {
+                            font-size: 22px;
+                            margin-bottom: 2vh
+                        }
+
+                        div
+                        {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            
+                            label
+                            {
+                                background-color:rgb(18, 28, 56)  ;
+                                border: 2px solid white;
+                                color: #30ffa5;
+                                padding: 5px 10px; 
+                                border-radius: 15px;
+                                margin: 1.5vh 1vw 0 0;
+                            }
+                        }
+                    }
+                }
+
+                .principal-experiencias:hover
+                {
+                    opacity: 1;
+                    background-color: rgba(255, 255, 255, 0.068);
+                }
+            }
+
+            #projetos
+            {
+                display: flex;
+                flex-direction: column;
+                transition: opacity 0.6s;
+
+                #primeiro-projeto
+                {
+                    transition: opacity 1s;
+                    opacity: 0.9;
+                }
+
+                #segundo-projeto
+                {
+                    transition: opacity 1s;
+                    opacity: 0.9;
+                }
+
+                #terceiro-projeto
+                {
+                    transition: opacity 1s;
+                    opacity: 0.9;
+                }
+
+                a
+                {
+                    text-decoration: none;
+                    color: white;
+                    margin: 1vh 0;
+                }
+
+                .principal-projetos
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 2vh;
+                    padding: 20px;
+                    border-radius: 10px;
+                    opacity: 0.9;
+                    transition: background-color 0.3s;
+
+                    .nomes-dados
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        width: 20vw;
+                        text-align: left;
+                        padding-left: 2vw;
+
+                        h1
+                        {
+                            padding-bottom: 1vh;
+                        }
+
+                        p
+                        {
+                            text-align: justify;
+                        }
+
+                        div
+                        {
+                            margin-top: 2vh;
+                            display: flex;
+                            
+                            label
+                            {
+                                background-color:rgb(18, 28, 56)  ;
+                                border: 2px solid white;
+                                color: #30ffa5;
+                                padding: 5px 10px; 
+                                border-radius: 15px;
+                                margin: 1.5vh 1vw 0 0;
+                            }
+                        }
+                    }
+
+                    div 
+                    {
+                        display: flex;
+
+                        .img
+                        {
+                            width: 14vw;
+                            height: 16vh;
+                            border-radius: 10px;
+                            transition: filter 0.3s;
+                            border: 1px solid rgb(82, 82, 82);
+                        }
+                    }
+                }
+
+                .principal-projetos:hover
+                {
+                    opacity: 0.9;
+                    background-color: rgba(255, 255, 255, 0.068);
+                    .img
+                    {
+                        filter: drop-shadow(0px 0px 2px white);
+                    }
+                }
+            }
+
+            #projetos:hover
+            {
+                #primeiro-projeto
+                {
+                    transition: opacity 2s;
+                    opacity: 0.6;
+                }
+
+                #segundo-projeto
+                {
+                    transition: opacity 2s;
+                    opacity: 0.6;
+                }
+
+                #terceiro-projeto
+                {
+                    transition: opacity 2s;
+                    opacity: 0.6;
+                }
+
+                #primeiro-projeto:hover
+                {
+                    transition: opacity 2s;
+                    opacity: 1;
+                }
+
+                #segundo-projeto:hover
+                {
+                    transition: opacity 2s;
+                    opacity: 1;
+                }
+
+                #terceiro-projeto:hover
+                {
+                    transition: opacity 2s;
+                    opacity: 1;
+                }
+            }
+
+            #qualificacoes
+            {
+                padding: 10vh 0;
+
+                #primeiro-quali
+                {
+                    transition: opacity 1s;
+                    opacity: 0.9;
+                }
+
+                #segundo-quali
+                {
+                    transition: opacity 1s;
+                    opacity: 0.9;
+                }
+
+                .principal-qualificacoes
+                {
+                    display: flex;
+                    justify-content: left;
+                    border-radius: 10px;
+                    text-align: left;
+                    opacity: 0.9;
+                    transition: background-color 0.3s;
+                    padding: 20px;
+                    margin-bottom: 5vh;
+
+                    div
+                    {
+                        display: flex;
+                        flex-direction: column;
+
+                        
+                        h1
+                        {
+                            font-size: 14px;
+                            margin-bottom: 2vh;
+                        }
+
+                        h2
+                        {
+                            font-size: 22px;
+                            margin-bottom: 2vh
+                        }
+
+                        div
+                        {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            
+                            label
+                            {
+                                background-color:rgb(18, 28, 56)  ;
+                                border: 2px solid white;
+                                color: #30ffa5;
+                                padding: 5px 10px; 
+                                border-radius: 15px;
+                                margin: 1.5vh 1vw 0 0;
+                            }
+                        }
+                    }
+                }    
+            }
+
+            .principal-qualificacoes:hover
+                {
+                    opacity: 1;
+                    background-color: rgba(255, 255, 255, 0.068);
+                }
+                
+                #qualificacoes:hover
+                {
+                    #primeiro-quali
+                    {
+                        transition: opacity 2s;
+                        opacity: 0.6;
+                    }
+    
+                    #segundo-quali
+                    {
+                        transition: opacity 2s;
+                        opacity: 0.6;
+                    }
+
+    
+                    #primeiro-quali:hover
+                    {
+                        transition: opacity 2s;
+                        opacity: 1;
+                    }
+    
+                    #segundo-quali:hover
+                    {
+                        transition: opacity 2s;
+                        opacity: 1;
+                    }
+                }
+
+
+
+            footer 
+            {
+                opacity: 0.7;
+                text-align: center;
+                margin-top: 10vh;
+                padding-bottom: 10vh;
+            }
+        }
+    }
+
+        article
+        {
+            width: 30vw;
+        }   
+}

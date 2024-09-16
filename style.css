@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: darkblue;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body #article-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 50vw;
+  height: 68vh;
+  margin: 8vh 0;
+}
+body #article-block p {
+  opacity: 0.8;
+  width: 21vw;
+  margin-bottom: 4vh;
+}
+body #article-block h1 {
+  width: 21vw;
+  font-size: 50px;
+  margin-bottom: 4vh;
+  opacity: 1;
+}
+body #article-block h2 {
+  width: 21vw;
+  font-size: 30px;
+  margin-bottom: 2vh;
+  opacity: 0.9;
+}
+body #article-block #links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #article-block #links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 0.6vh 0;
+  opacity: 0.6;
+  width: 20vw;
+  transition: 0.6s;
+  transition: filter 1s;
+}
+body #article-block #links a p {
+  margin: 0px 10px 0px 0px;
+  width: 3vw;
+  height: 0.4vh;
+  background-color: white;
+  transition: 1s;
+}
+body #article-block #imagens {
+  display: flex;
+  align-items: center;
+  margin-top: 4vh;
+}
+body #article-block #imagens a img {
+  width: 45px;
+  border-radius: 10px;
+  height: 40px;
+  margin: 10px;
+  opacity: 0.6;
+  transition: opacity 1s;
+  transition: filter 1s;
+}
+body #article-block #imagens a img:hover {
+  opacity: 1;
+  filter: drop-shadow(0px 0px 2px white);
+  transition: filter 1s;
+}
+@media screen and (max-width: 1000px) {
+  body #article-block {
+    display: none;
+  }
+}
+body main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(18, 28, 56);
+}
+@media screen and (max-width: 1000px) {
+  body main #celular-respons2 {
+    display: none;
+  }
+}
+body main #dados {
+  width: 40vw;
+}
+@media screen and (min-width: 1000px) {
+  body main #dados #celular-respons {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body main #dados #celular-respons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  body main #dados #celular-respons p {
+    opacity: 0.6;
+    width: 21vw;
+    margin-bottom: 4vh;
+  }
+  body main #dados #celular-respons h1 {
+    width: 21vw;
+    font-size: 50px;
+    margin-bottom: 4vh;
+    opacity: 0.8;
+  }
+  body main #dados #celular-respons h2 {
+    width: 21vw;
+    font-size: 30px;
+    margin-bottom: 2vh;
+    opacity: 0.7;
+  }
+  body main #dados #celular-respons div {
+    display: flex;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  body main #dados #celular-respons div a img {
+    width: 45px;
+    border-radius: 10px;
+    height: 40px;
+    margin: 0px 10px;
+    opacity: 0.4;
+    transition: 1s;
+  }
+  body main #dados #celular-respons div a img:hover {
+    opacity: 1;
+  }
+}
+body main #dados #sobre {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  justify-content: center;
+  opacity: 0.9;
+  padding: 8vh 0 0;
+}
+body main #dados #sobre p {
+  margin-bottom: 3vh;
+  line-height: 4vh;
+}
+body main #dados #experiencias {
+  padding: 10vh 0;
+}
+body main #dados #experiencias .principal-experiencias {
+  display: flex;
+  justify-content: left;
+  border-radius: 10px;
+  text-align: justify;
+  opacity: 0.9;
+  transition: background-color 0.3s;
+  padding: 20px;
+}
+body main #dados #experiencias .principal-experiencias div {
+  display: flex;
+  flex-direction: column;
+}
+body main #dados #experiencias .principal-experiencias div h1 {
+  font-size: 14px;
+  margin-bottom: 2vh;
+}
+body main #dados #experiencias .principal-experiencias div h2 {
+  font-size: 22px;
+  margin-bottom: 2vh;
+}
+body main #dados #experiencias .principal-experiencias div div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body main #dados #experiencias .principal-experiencias div div label {
+  background-color: rgb(18, 28, 56);
+  border: 2px solid white;
+  color: #30ffa5;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 1.5vh 1vw 0 0;
+}
+body main #dados #experiencias .principal-experiencias:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.068);
+}
+body main #dados #projetos {
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.6s;
+}
+body main #dados #projetos #primeiro-projeto {
+  transition: opacity 1s;
+  opacity: 0.9;
+}
+body main #dados #projetos #segundo-projeto {
+  transition: opacity 1s;
+  opacity: 0.9;
+}
+body main #dados #projetos #terceiro-projeto {
+  transition: opacity 1s;
+  opacity: 0.9;
+}
+body main #dados #projetos a {
+  text-decoration: none;
+  color: white;
+  margin: 1vh 0;
+}
+body main #dados #projetos .principal-projetos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition: background-color 0.3s;
+}
+body main #dados #projetos .principal-projetos .nomes-dados {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  text-align: left;
+  padding-left: 2vw;
+}
+body main #dados #projetos .principal-projetos .nomes-dados h1 {
+  padding-bottom: 1vh;
+}
+body main #dados #projetos .principal-projetos .nomes-dados p {
+  text-align: justify;
+}
+body main #dados #projetos .principal-projetos .nomes-dados div {
+  margin-top: 2vh;
+  display: flex;
+}
+body main #dados #projetos .principal-projetos .nomes-dados div label {
+  background-color: rgb(18, 28, 56);
+  border: 2px solid white;
+  color: #30ffa5;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 1.5vh 1vw 0 0;
+}
+body main #dados #projetos .principal-projetos div {
+  display: flex;
+}
+body main #dados #projetos .principal-projetos div .img {
+  width: 14vw;
+  height: 16vh;
+  border-radius: 10px;
+  transition: filter 0.3s;
+  border: 1px solid rgb(82, 82, 82);
+}
+body main #dados #projetos .principal-projetos:hover {
+  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.068);
+}
+body main #dados #projetos .principal-projetos:hover .img {
+  filter: drop-shadow(0px 0px 2px white);
+}
+body main #dados #projetos:hover #primeiro-projeto {
+  transition: opacity 2s;
+  opacity: 0.6;
+}
+body main #dados #projetos:hover #segundo-projeto {
+  transition: opacity 2s;
+  opacity: 0.6;
+}
+body main #dados #projetos:hover #terceiro-projeto {
+  transition: opacity 2s;
+  opacity: 0.6;
+}
+body main #dados #projetos:hover #primeiro-projeto:hover {
+  transition: opacity 2s;
+  opacity: 1;
+}
+body main #dados #projetos:hover #segundo-projeto:hover {
+  transition: opacity 2s;
+  opacity: 1;
+}
+body main #dados #projetos:hover #terceiro-projeto:hover {
+  transition: opacity 2s;
+  opacity: 1;
+}
+body main #dados #qualificacoes {
+  padding: 10vh 0;
+}
+body main #dados #qualificacoes #primeiro-quali {
+  transition: opacity 1s;
+  opacity: 0.9;
+}
+body main #dados #qualificacoes #segundo-quali {
+  transition: opacity 1s;
+  opacity: 0.9;
+}
+body main #dados #qualificacoes .principal-qualificacoes {
+  display: flex;
+  justify-content: left;
+  border-radius: 10px;
+  text-align: left;
+  opacity: 0.9;
+  transition: background-color 0.3s;
+  padding: 20px;
+  margin-bottom: 5vh;
+}
+body main #dados #qualificacoes .principal-qualificacoes div {
+  display: flex;
+  flex-direction: column;
+}
+body main #dados #qualificacoes .principal-qualificacoes div h1 {
+  font-size: 14px;
+  margin-bottom: 2vh;
+}
+body main #dados #qualificacoes .principal-qualificacoes div h2 {
+  font-size: 22px;
+  margin-bottom: 2vh;
+}
+body main #dados #qualificacoes .principal-qualificacoes div div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body main #dados #qualificacoes .principal-qualificacoes div div label {
+  background-color: rgb(18, 28, 56);
+  border: 2px solid white;
+  color: #30ffa5;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 1.5vh 1vw 0 0;
+}
+body main #dados .principal-qualificacoes:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.068);
+}
+body main #dados #qualificacoes:hover #primeiro-quali {
+  transition: opacity 2s;
+  opacity: 0.6;
+}
+body main #dados #qualificacoes:hover #segundo-quali {
+  transition: opacity 2s;
+  opacity: 0.6;
+}
+body main #dados #qualificacoes:hover #primeiro-quali:hover {
+  transition: opacity 2s;
+  opacity: 1;
+}
+body main #dados #qualificacoes:hover #segundo-quali:hover {
+  transition: opacity 2s;
+  opacity: 1;
+}
+body main #dados footer {
+  opacity: 0.7;
+  text-align: center;
+  margin-top: 10vh;
+  padding-bottom: 10vh;
+}
+body article {
+  width: 30vw;
+}/*# sourceMappingURL=style.css.map */
