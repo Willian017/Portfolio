@@ -232,7 +232,7 @@ body {
 .principal-projetos:hover .img {
   filter: drop-shadow(0px 0px 2px white);
 }
-#primeiro-projeto {
+#projetos:hover #primeiro-projeto {
   transition: opacity 2s;
   opacity: 0.6;
 }
@@ -462,12 +462,34 @@ article {
   }
 
   .principal-projetos div .img {
-    width: 30vw;
+    width: 35vw;
     height: 30vh;
     border-radius: 10px;
     margin-bottom: 5vh;
     transition: filter 0.3s;
     border: 1px solid rgb(82, 82, 82);
+  }
+
+  #qualificacoes:hover #primeiro-quali {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+  #qualificacoes:hover #segundo-quali {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+
+  #projetos:hover #primeiro-projeto {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+  #projetos:hover #segundo-projeto {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+  #projetos:hover #terceiro-projeto {
+    transition: opacity 2s;
+    opacity: 1;
   }
 }
 
@@ -485,6 +507,28 @@ article {
     transition: filter 0.3s;
     border: 1px solid rgb(82, 82, 82);
   }
+
+  #qualificacoes:hover #primeiro-quali {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+  #qualificacoes:hover #segundo-quali {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+
+  #projetos:hover #primeiro-projeto {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+  #projetos:hover #segundo-projeto {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+  #projetos:hover #terceiro-projeto {
+    transition: opacity 2s;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -500,6 +544,33 @@ article {
     border-radius: 10px;
     transition: filter 0.3s;
     border: 1px solid rgb(82, 82, 82);
+  }
+
+  #qualificacoes:hover #primeiro-quali {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+  #qualificacoes:hover #segundo-quali {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+
+  #projetos:hover #primeiro-projeto {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+  #projetos:hover #segundo-projeto {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+  #projetos:hover #terceiro-projeto {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+
+  .principal-experiencias h1
+  {
+    text-align: left;
   }
 }
 
