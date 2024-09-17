@@ -140,7 +140,7 @@ body {
   color: #30ffa5;
   padding: 5px 10px;
   border-radius: 15px;
-  margin: 1.5vh 1vw 0 0;
+  margin: 1.5vw 8px 0 0;
 }
 .principal-experiencias:hover {
   opacity: 1;
@@ -212,7 +212,7 @@ body {
   color: #30ffa5;
   padding: 5px 10px;
   border-radius: 15px;
-  margin: 1.5vh 1vw 0 0;
+  margin: 1.5vw 8px 0 0;
   font-size: 16px;
 }
 .principal-projetos div {
@@ -300,7 +300,7 @@ body {
   color: #30ffa5;
   padding: 5px 10px;
   border-radius: 15px;
-  margin: 1.5vh 1vw 0 0;
+  margin: 1.5vw 8px 0 0;
 }
 .principal-qualificacoes:hover {
   opacity: 1;
@@ -399,7 +399,7 @@ article {
     color: #30ffa5;
     padding: 5px 10px;
     border-radius: 15px;
-    margin: 1.5vh 1vw 0 0;
+    margin: 1.5vw 8px 0 0;
     font-size: 16px;
   }
   .principal-projetos div {
@@ -477,8 +477,24 @@ article {
     margin: 3vh 0;
   }
   .principal-projetos div .img {
-    width: 35vw;
+    width: 40vw;
     height: 20vh;
+    padding: 0;
+    margin-bottom: 5vh;
+    border-radius: 10px;
+    transition: filter 0.3s;
+    border: 1px solid rgb(82, 82, 82);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .principal-projetos
+  {
+    margin: 3vh 0;
+  }
+  .principal-projetos div .img {
+    width: 50vw;
+    height: 18vh;
     padding: 0;
     margin-bottom: 5vh;
     border-radius: 10px;
