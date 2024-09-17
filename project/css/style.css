@@ -472,8 +472,10 @@ article {
 }
 
 @media screen and (max-width: 800px) {
-
-
+  .principal-projetos
+  {
+    margin: 3vh 0;
+  }
   .principal-projetos div .img {
     width: 35vw;
     height: 20vh;
