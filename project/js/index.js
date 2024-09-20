@@ -3,7 +3,6 @@ function ativado(id1,id2)
     var link = document.querySelector(id1);
     var p = document.querySelector(id2);
     link.style.opacity = '1';
-    link.style.filter = 'drop-shadow(0px 0px 1px white)';
     p.style.width = '6vw';
 
     document.body.addEventListener('mouseover', e => {
@@ -11,7 +10,6 @@ function ativado(id1,id2)
     var p = document.querySelector(id2);
     if (!link) { return; }
     link.style.opacity = '1';
-    link.style.filter = 'drop-shadow(0px 0px 1px white)';
     p.style.width = '6vw';
     });
 
@@ -20,7 +18,6 @@ function ativado(id1,id2)
     var p = document.querySelector(id2);
     if (!link) { return; }
     link.style.opacity = '1';
-    link.style.filter = 'none';
     p.style.width = '6vw';
     });
 }
@@ -41,7 +38,6 @@ function hover(id1,id2)
     var p = document.querySelector(id2);
     if (!link) { return; }
     link.style.opacity = '1';
-    link.style.filter = 'drop-shadow(0px 0px 1px white)';
     p.style.width = '6vw';
     });
 
@@ -50,7 +46,6 @@ function hover(id1,id2)
     var p = document.querySelector(id2);
     if (!link) { return; }
     link.style.opacity = '0.6';
-    link.style.filter = 'none';
     p.style.width = '3vw';
     });
 }
