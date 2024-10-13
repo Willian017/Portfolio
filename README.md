@@ -1,6 +1,6 @@
 <h1 align="center">Portfolio</h1>
 <p align="center">Meu portfolio pessoal</p>
-<h4 align="center">🚀 Finalizado 🚀</h4>
+<h4 align="center"> 🚀 Finalizado 🚀 </h4>
 
 ### 🛠 Tecnologias
 
