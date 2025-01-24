@@ -1,6 +1,6 @@
 <h1 align="center">Portfolio</h1>
 
-<img src="imagens/Portfolio.png" height="110" width="350" alt="Unform" />
+<img src="project/imagens/Portfolio.png" height="110" width="350" alt="Unform" />
 
 <p align="center">Meu portfolio pessoal</p>
 <h4 align="center">🚀 Finalizado 🚀</h4>
