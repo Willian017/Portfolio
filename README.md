@@ -26,5 +26,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Feito com ❤️ por Willian Yuji 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-Willian-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/willian-yuji-991088245/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Willian-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/willian-yuji-suguiyama-991088245/) 
 [![Gmail Badge](https://img.shields.io/badge/-willianyuji100@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:willianyuji100@gmail.com)](mailto:willianyuji100@gmail.com)
