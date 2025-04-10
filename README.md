@@ -1,7 +1,7 @@
 <h1 align="center">Portfolio</h1>
 
 <div align="center">
-  <img src="project/imagens/ImagemPortfolio.png" height="260" width="700" alt="Unform"/>
+  <img src="project/imagens/ImagemPortfolio.png" height="600" width="700" alt="Unform"/>
 </div>
 
 <h4 align="center">🚀 Finalizado 🚀</h4>
